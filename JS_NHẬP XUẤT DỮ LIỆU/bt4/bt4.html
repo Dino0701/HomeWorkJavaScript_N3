@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tính a mũ 2, a mũ 3, a mũ 4</title>
+  </head>
+  <body>
+    <label for="a">Nhập vào số nguyên a:</label>
+    <input type="number" id="a">
+    <button onclick="tinh()">Tính</button>
+    <br><br>
+    <p id="result"></p>
+
+    <script>
+      function tinh() {
+        var a = parseInt(document.getElementById("a").value);
+        var result = document.getElementById("result");
+        
+        result.innerHTML = "a mũ 2 = " + (a*a) + "<br>" +
+                            "a mũ 3 = " + (a*a*a) + "<br>" +
+                            "a mũ 4 = " + (a*a*a*a);
+      }
+    </script>
+  </body>
+</html>

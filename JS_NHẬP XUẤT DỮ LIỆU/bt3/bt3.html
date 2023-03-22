@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tính toán</title>
+</head>
+<body>
+	<h1>Tính toán</h1>
+	<label for="input1">Nhập số thứ nhất:</label>
+	<input type="text" id="input1"><br>
+	<label for="input2">Nhập số thứ hai:</label>
+	<input type="text" id="input2"><br>
+	<button onclick="calculate()">Tính toán</button>
+	<br><br>
+	<label for="result">Kết quả:</label>
+	<input type="text" id="result" readonly>
+	
+	<script>
+		function calculate() {
+			// Lấy giá trị của hai ô nhập số
+			var a = parseInt(document.getElementById("input1").value);
+			var b = parseInt(document.getElementById("input2").value);
+			
+			// Tính toán kết quả
+			var sum = a + b;
+			var difference = a - b;
+			var product = a * b;
+			var quotient = a / b;
+			
+			// Hiển thị kết quả
+			document.getElementById("result").value = "Tổng: " + sum + ", " +
+				"Hiệu: " + difference + ", " +
+				"Tích: " + product + ", " +
+				"Thương: " + quotient;
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tính chu vi và diện tích hình chữ nhật</title>
+	<script>
+		function tinh() {
+			var a = parseInt(document.getElementById("canh_a").value);
+			var b = parseInt(document.getElementById("canh_b").value);
+			var chu_vi = 2 * (a + b);
+			var dien_tich = a * b;
+			document.getElementById("ket_qua").innerHTML = "Chu vi: " + chu_vi + "<br>Diện tích: " + dien_tich;
+		}
+	</script>
+</head>
+<body>
+	<label for="canh_a">Cạnh a:</label>
+	<input type="number" id="canh_a"><br><br>
+	<label for="canh_b">Cạnh b:</label>
+	<input type="number" id="canh_b"><br><br>
+	<button onclick="tinh()">Tính</button><br><br>
+	<div id="ket_qua"></div>
+</body>
+</html>

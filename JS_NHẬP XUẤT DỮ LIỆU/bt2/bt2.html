@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tính tổng hai số nguyên</title>
+  </head>
+  <body>
+    <label for="input-a">Nhập số nguyên a:</label>
+    <input type="number" id="input-a"><br>
+    <label for="input-b">Nhập số nguyên b:</label>
+    <input type="number" id="input-b"><br>
+    <button onclick="tinhTong()">Tính tổng</button><br>
+    <label for="result">Kết quả:</label>
+    <input type="text" id="result" disabled>
+    
+    <script>
+      function tinhTong() {
+        var a = parseInt(document.getElementById("input-a").value);
+        var b = parseInt(document.getElementById("input-b").value);
+        var tong = a + b;
+        document.getElementById("result").value = tong;
+      }
+    </script>
+  </body>
+</html>
